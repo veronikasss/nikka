@@ -1,0 +1,265 @@
+ html{
+    box-sizing: border-box;
+ }
+*,
+*::after,
+*::before{
+    box-sizing:inherit;
+} 
+
+
+
+body{
+    color:  #ffffff ;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    background-color: #000000;
+    
+}
+.img{
+   width: 100px;
+   height: 100px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+button{
+   border-radius: 0;
+   padding: 0; 
+   cursor: pointer;
+
+}
+.container{
+    max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+    
+    
+}
+
+.menu{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: unset;
+    font-weight: 500;
+    display: flex;
+    justify-content: right;
+    gap: 45px;
+    margin-top: 20px;
+    
+}
+.menu-btn{
+    display: none;
+    width: 30px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    margin-right: 5px;
+}
+.menu-btn span {
+    height: 1px;
+    width: 100%;
+    background-color: #ffff;    
+}
+.header__menu-list{
+    display: flex;
+    gap: 20px;
+}
+.shool{
+    font-size: 13px;
+    font-weight: 300;
+    display: flex;
+    justify-content: left;
+    color: #ffff;
+    margin-top: -10px;
+    width: 300px;
+}
+#title{
+    margin-top: 150px;
+    font-size: 55px;
+    margin-bottom: 150px;
+    
+}
+
+
+
+
+
+
+.img-nin{
+    margin-top: 15px;
+    height: 300px;
+    width: 275px;
+    object-fit: cover;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.img-student{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.student{
+    background-color: #0d150e;
+    width: 250px;
+    padding: 26px 26px;
+    border-radius: 20px;
+    
+}
+.text__name{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Bold;
+    color: #818181;
+    padding-top: 10px;
+}
+.old{
+    font-size: 23px;
+    font-family:'Istok Web', sans-serif; 
+    color: #818181;
+
+}
+.icons-s{
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    padding-right: 5px;
+    margin-top: -5px;
+}
+.flex{
+    padding-top: 15px;
+    display: flex;
+    gap: 13px;
+}
+.section-students{
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    font-family: Bold;
+    font-weight: 700;
+    margin-top: 100px;
+    
+}
+@media (max-width:1200px) {
+    #title{
+        font-size: 45px;
+        margin-bottom: 100px;
+    } 
+    .menu{
+        font-size: 13px;
+        gap: 40px;
+    }
+    .shool{
+        font-size: 11px;
+    }
+    .img-nin{
+        height: 265px;
+        width: 240px;
+    }
+      .student{
+        width: 230px;
+        height: 356px;
+    }
+    .text__name{
+        font-size: 23px;
+    }
+    .old{
+        font-size: 20px;
+    }
+    .img-student{
+        width: 186px;
+        height: 186px;  
+        
+    }
+    .section-students{
+        gap: 30px;
+        padding-top: 70px;
+    }
+}
+
+
+@media (max-width: 750px){
+    .img-nin{
+        height: 300px;
+        width: 300px;
+    }
+    .images{
+        gap: 25px;
+    }
+    .menu{
+        
+        gap: 330px;
+    }
+    .shool{
+        font-size: 9px;
+    }
+    #title{
+        font-size: 30px;
+        margin-bottom: 90px;
+        margin-top: 115px;
+    } 
+    .img-nin{
+        height: 350px;
+        width: 350px;
+    }
+    .title{
+        font-size:  45px; ;
+    }
+}
+@media (max-width: 550px){
+    .header__menu-list{
+        width: 175px;
+        display: flex;
+        background-color: #0d150e;
+        color: #ffffff;
+        flex-direction: column;
+        gap:  20px 0;
+        right: 70px;
+        top: 0;
+        padding: 25px 35px 25px 45px;
+        position: absolute;
+        transform: translateY(-110%) ;
+        transition: transform .5s ease;
+   }
+     .header__menu-list.menu-open{
+        transform: translateY(0) ;
+
+     }
+    .menu-btn{
+        display: flex;
+    }
+      .title{
+        margin-top: 185px;
+      }  
+    
+}
+@media (max-width: 430px){
+    .shool{
+        display: none;
+    }
+
+}
+
